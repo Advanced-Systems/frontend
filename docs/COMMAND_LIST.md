@@ -19,3 +19,17 @@ git rm -r --cached .
 ```
 git reset --hard
 ```
+
+## ESLint
+
+Display all rules that are currently being applied:
+
+```
+./node_modules/.bin/eslint --print-config *.ts
+```
+
+Where:
+
+- `"off"` or `0` - Turns the rule **off** (no enforcement).
+- `"warn"` or `1` - Turns the rule **on** as a **warning** (shows a warning but doesn't fail the build).
+- `"error"` or `2` - Turns the rule **on** as an **error** (fails the build if the rule is violated).
